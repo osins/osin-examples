@@ -9,8 +9,8 @@ require (
 	github.com/gofiber/template v1.6.6
 	github.com/google/uuid v1.2.0
 	github.com/joho/godotenv v1.3.0
-	github.com/osins/osin-simple v0.0.1-beta.10
-	github.com/osins/osin-storage v0.0.8
+	github.com/osins/osin-simple v0.1.1
+	github.com/osins/osin-storage v0.1.1
 	github.com/stretchr/testify v1.7.0 // indirect
 )
 
