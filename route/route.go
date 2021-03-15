@@ -3,6 +3,7 @@ package route
 import (
 	"fmt"
 	"net/url"
+	"runtime/debug"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/osins/osin-simple/simple"
@@ -52,7 +53,18 @@ type route struct {
 	Server *simple.SimpleServer
 }
 
+func (r *route) ExceptionCatch(err interface{}) {
+	if e := err; e != nil {
+		fmt.Printf("exception catch: %s\n", e)
+		debug.PrintStack()
+	}
+}
+
 func (r *route) Authorize(ctx *fiber.Ctx) error {
+	defer func() {
+		r.ExceptionCatch(recover())
+	}()
+
 	fmt.Printf("authorize handle start:\n")
 	fmt.Printf("method: %s\n", ctx.Route().Method)
 
@@ -115,6 +127,10 @@ func (r *route) Authorize(ctx *fiber.Ctx) error {
 }
 
 func (r *route) Token(ctx *fiber.Ctx) error {
+	defer func() {
+		r.ExceptionCatch(recover())
+	}()
+
 	req := &simple_request.AccessRequest{
 		ClientId:           ctx.FormValue("client_id"),
 		ClientSecret:       ctx.FormValue("client_secret"),
@@ -142,6 +158,10 @@ func (r *route) Token(ctx *fiber.Ctx) error {
 }
 
 func (r *route) Info(ctx *fiber.Ctx) error {
+	defer func() {
+		r.ExceptionCatch(recover())
+	}()
+
 	code, err := simple.NewToken().AuthorizationToCode(ctx.Get("Authorization"))
 	if err != nil {
 		return err
