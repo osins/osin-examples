@@ -1,0 +1,126 @@
+# github.com/andybalholm/brotli v1.0.0
+github.com/andybalholm/brotli
+# github.com/araddon/dateparse v0.0.0-20210207001429-0eec95c9db7e
+## explicit
+# github.com/dgrijalva/jwt-go v3.2.0+incompatible
+## explicit
+github.com/dgrijalva/jwt-go
+# github.com/fatih/structs v1.1.0
+## explicit
+github.com/fatih/structs
+# github.com/flosch/pongo2/v4 v4.0.1
+github.com/flosch/pongo2/v4
+# github.com/gofiber/fiber/v2 v2.5.0
+## explicit
+github.com/gofiber/fiber/v2
+github.com/gofiber/fiber/v2/internal/bytebufferpool
+github.com/gofiber/fiber/v2/internal/colorable
+github.com/gofiber/fiber/v2/internal/encoding/ascii
+github.com/gofiber/fiber/v2/internal/encoding/json
+github.com/gofiber/fiber/v2/internal/isatty
+github.com/gofiber/fiber/v2/internal/schema
+github.com/gofiber/fiber/v2/internal/uuid
+github.com/gofiber/fiber/v2/utils
+# github.com/gofiber/template v1.6.6
+## explicit
+github.com/gofiber/template/django
+github.com/gofiber/template/utils
+# github.com/google/go-querystring v1.0.0
+## explicit
+# github.com/google/uuid v1.2.0
+## explicit
+github.com/google/uuid
+# github.com/jackc/chunkreader/v2 v2.0.1
+github.com/jackc/chunkreader/v2
+# github.com/jackc/pgconn v1.8.0
+github.com/jackc/pgconn
+github.com/jackc/pgconn/internal/ctxwatch
+github.com/jackc/pgconn/stmtcache
+# github.com/jackc/pgio v1.0.0
+github.com/jackc/pgio
+# github.com/jackc/pgpassfile v1.0.0
+github.com/jackc/pgpassfile
+# github.com/jackc/pgproto3/v2 v2.0.6
+github.com/jackc/pgproto3/v2
+# github.com/jackc/pgservicefile v0.0.0-20200714003250-2b9c44734f2b
+github.com/jackc/pgservicefile
+# github.com/jackc/pgtype v1.6.2
+github.com/jackc/pgtype
+# github.com/jackc/pgx/v4 v4.10.1
+github.com/jackc/pgx/v4
+github.com/jackc/pgx/v4/internal/sanitize
+github.com/jackc/pgx/v4/stdlib
+# github.com/jinzhu/inflection v1.0.0
+github.com/jinzhu/inflection
+# github.com/jinzhu/now v1.1.1
+github.com/jinzhu/now
+# github.com/joho/godotenv v1.3.0
+## explicit
+github.com/joho/godotenv
+# github.com/klauspost/compress v1.10.7
+github.com/klauspost/compress/flate
+github.com/klauspost/compress/gzip
+github.com/klauspost/compress/zlib
+# github.com/osins/osin-simple v0.0.1-beta.10 => D:\works\codes\my\osin-simple
+## explicit
+github.com/osins/osin-simple/simple
+github.com/osins/osin-simple/simple/config
+github.com/osins/osin-simple/simple/log
+github.com/osins/osin-simple/simple/model/entity
+github.com/osins/osin-simple/simple/model/face
+github.com/osins/osin-simple/simple/request
+github.com/osins/osin-simple/simple/response
+github.com/osins/osin-simple/simple/storage
+github.com/osins/osin-simple/simple/util
+github.com/osins/osin-simple/simple/validate
+# github.com/osins/osin-storage v0.0.8 => D:\works\codes\my\osin-storage
+## explicit
+github.com/osins/osin-storage/storage/pg
+github.com/osins/osin-storage/storage/pg/dbtype
+github.com/osins/osin-storage/storage/pg/model
+# github.com/pborman/uuid v1.2.1
+github.com/pborman/uuid
+# github.com/valyala/bytebufferpool v1.0.0
+github.com/valyala/bytebufferpool
+# github.com/valyala/fasthttp v1.18.0
+github.com/valyala/fasthttp
+github.com/valyala/fasthttp/fasthttputil
+github.com/valyala/fasthttp/reuseport
+github.com/valyala/fasthttp/stackless
+# github.com/valyala/tcplisten v0.0.0-20161114210144-ceec8f93295a
+github.com/valyala/tcplisten
+# golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9
+golang.org/x/crypto/pbkdf2
+# golang.org/x/sys v0.0.0-20201210223839-7e3030f88018
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/unix
+golang.org/x/sys/windows
+# golang.org/x/text v0.3.3
+golang.org/x/text/cases
+golang.org/x/text/internal
+golang.org/x/text/internal/language
+golang.org/x/text/internal/language/compact
+golang.org/x/text/internal/tag
+golang.org/x/text/language
+golang.org/x/text/runes
+golang.org/x/text/secure/bidirule
+golang.org/x/text/secure/precis
+golang.org/x/text/transform
+golang.org/x/text/unicode/bidi
+golang.org/x/text/unicode/norm
+golang.org/x/text/width
+# golang.org/x/xerrors v0.0.0-20191204190536-9bdfabe68543
+golang.org/x/xerrors
+golang.org/x/xerrors/internal
+# gorm.io/driver/postgres v1.0.8
+gorm.io/driver/postgres
+# gorm.io/gorm v1.20.12
+gorm.io/gorm
+gorm.io/gorm/callbacks
+gorm.io/gorm/clause
+gorm.io/gorm/logger
+gorm.io/gorm/migrator
+gorm.io/gorm/schema
+gorm.io/gorm/utils
+# github.com/osins/osin-simple => D:\works\codes\my\osin-simple
+# github.com/osins/osin-storage => D:\works\codes\my\osin-storage
