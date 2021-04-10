@@ -307,6 +307,12 @@ github.com/onsi/ginkgo v1.6.0/go.mod h1:lLunBs/Ym6LB5Z9jYTR76FiuTmxDTDusOGeTQH+W
 github.com/onsi/ginkgo v1.12.0/go.mod h1:oUhWkIvk5aDxtKvDDuw8gItl8pKl42LzjC9KZE0HfGg=
 github.com/onsi/gomega v1.7.1/go.mod h1:XdKZgCCFLUoM/7CFJVPcG8C1xQ1AJ0vpAezJrB7JYyY=
 github.com/onsi/gomega v1.9.0/go.mod h1:Ho0h+IUsWyvy1OpqCwxlQ/21gkhVunqlU8fDGcoTdcA=
+github.com/openshift/osin v1.0.1/go.mod h1:/gGuqQHvGNST0GB+Pomi3398FTdcM+9UaXafpqHvfDM=
+github.com/osins/osin-simple v0.0.1-beta.10/go.mod h1:XIhbgq0OQud36UOU4QTS7/v013LUqiiVgros8pG79DQ=
+github.com/osins/osin-simple v0.1.2 h1:bT1gbwIvw/32rG1GuXJuX1gIQyPWdYp/AJ5myYECmpc=
+github.com/osins/osin-simple v0.1.2/go.mod h1:YtAOsmz7+G+xUsc/hfDZfB2ul5N1cxoPkbz9KjlG5j0=
+github.com/osins/osin-storage v0.1.2 h1:ZlbRxUUzWmTibPUI5aWNT088Z36222ZLkE0VY2ba4+c=
+github.com/osins/osin-storage v0.1.2/go.mod h1:8ZDuZWsxom7TOtcpf7pwX0RwzqStEgtzU2X6YzVhUCo=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=
 github.com/pborman/uuid v1.2.0/go.mod h1:X/NO0urCmaxf9VXbdlT7C2Yzkj2IKimNn4k+gtPdI/k=
 github.com/pborman/uuid v1.2.1 h1:+ZZIw58t/ozdjRaXh/3awHfmWRbzYxJoAdNJxe/3pvw=

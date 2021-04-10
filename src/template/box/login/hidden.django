@@ -1,0 +1,5 @@
+<input type="hidden" id="client_id" name="client_id" value="{{ authorize.ClientId }}">
+<input type="hidden" id="client_secret" name="client_secret" value="{{ authorize.ClientSecret }}">
+<input type="hidden" id="response_type" name="response_type" value="login">
+<input type="hidden" id="redirect_uri" name="redirect_uri" value="{{ authorize.RedirectUri }}">
+<input type="hidden" id="state" name="state" value="{{ authorize.State }}">

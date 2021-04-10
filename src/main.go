@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/gofiber/fiber/v2"
+	fiber "github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/django"
 	"github.com/osins/osin-storage/storage/pg"
 	"sso.humanrisk.cn/auth"
@@ -30,6 +30,8 @@ func main() {
 	})
 
 	route := route.New()
+
+	app.Static("/oauth/assets", "./template/assets")
 
 	// Authorization code endpoint
 	app.Get("/oauth/authorize", route.Authorize)
