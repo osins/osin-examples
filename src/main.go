@@ -2,6 +2,10 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"path/filepath"
+	"runtime"
+	"time"
 
 	fiber "github.com/gofiber/fiber/v2"
 	"github.com/gofiber/template/django"
@@ -11,8 +15,19 @@ import (
 	"sso.humanrisk.cn/util"
 )
 
+var (
+	_, f, _, _ = runtime.Caller(0)
+	BasePATH   = filepath.Dir(f)
+	ENVFile    = BasePATH + "/.env"
+)
+
 func main() {
-	err := util.NewEnv().Load()
+	now := time.Now()
+	tz, _ := time.LoadLocation("Asia/Shanghai")
+	parisTime := now.In(tz)
+	fmt.Printf("Local time: %s\nParis time: %s\n", now, parisTime)
+
+	err := util.NewEnv().Load(ENVFile)
 	if err != nil {
 		return
 	}
@@ -23,7 +38,7 @@ func main() {
 
 	auth.NewClient().Init()
 
-	engine := django.New("./template/view", ".django")
+	engine := django.New(BasePATH+"/template/view", ".django")
 
 	app := fiber.New(fiber.Config{
 		Views: engine,
@@ -31,7 +46,7 @@ func main() {
 
 	route := route.New()
 
-	app.Static("/oauth/assets", "./template/assets")
+	app.Static("/oauth/assets", BasePATH+"/template/assets")
 
 	// Authorization code endpoint
 	app.Get("/oauth/authorize", route.Authorize)
@@ -42,7 +57,7 @@ func main() {
 
 	app.Get("/api/user", route.Info)
 
-	if err := app.Listen(":14000"); err != nil {
+	if err := app.Listen(os.Getenv("APP_LISTEN")); err != nil {
 		fmt.Printf("fiber boot error: %s", err.Error())
 	}
 }

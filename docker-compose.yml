@@ -1,0 +1,14 @@
+version: "3.8"
+
+services:
+  sso:
+    image: humanrisk.cn/sso
+    ports:
+      - 14000:80
+    volumes:
+      - ./.env:/app/.env
+
+networks:
+  default:
+    external:
+      name: dev
