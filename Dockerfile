@@ -10,7 +10,7 @@ RUN go env -w CGO_LDFLAGS="-w -s"
 RUN go env
 
 COPY ./src /app
-RUN apk --no-cache add tzdata && cd /app && go mod vendor && go build -a -installsuffix cgo -o serve main.go
+RUN apk --no-cache add tzdata && cd /app && go build -a -installsuffix cgo -o serve main.go
 RUN ls /app
 
 # FROM scratch

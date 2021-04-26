@@ -111,7 +111,7 @@ func (r *route) Authorize(ctx *fiber.Ctx) error {
 	case simple_request.AUTHORIZE_RESPONSE_CODE:
 		res, err = authorize.Authorization(req)
 		if err != nil {
-			if res.NeedLogin {
+			if res != nil && res.NeedLogin {
 				return ctx.Render("login", fiber.Map{
 					"Title":     "Humanrisk Login",
 					"authorize": req,
