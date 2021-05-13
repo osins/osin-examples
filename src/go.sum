@@ -315,6 +315,8 @@ github.com/osins/osin-simple v0.1.4 h1:z24CX62kAZBbheXvXuu2WS4oPgPiO4p8i2sg7DfWE
 github.com/osins/osin-simple v0.1.4/go.mod h1:YtAOsmz7+G+xUsc/hfDZfB2ul5N1cxoPkbz9KjlG5j0=
 github.com/osins/osin-simple v0.1.5 h1:ihbMGtUzbTvMNFxIPwRLlLAxrJXxnJzVXOPJ5gj0MGs=
 github.com/osins/osin-simple v0.1.5/go.mod h1:YtAOsmz7+G+xUsc/hfDZfB2ul5N1cxoPkbz9KjlG5j0=
+github.com/osins/osin-simple v0.1.6 h1:NmiayPB0p+pHuljL24wB05GEMfBDcS4Q40Fx3sRD13Q=
+github.com/osins/osin-simple v0.1.6/go.mod h1:YtAOsmz7+G+xUsc/hfDZfB2ul5N1cxoPkbz9KjlG5j0=
 github.com/osins/osin-storage v0.1.5 h1:8zh1KveJ34pW6jJ/qG24ds8jLV4HJKNaoXU+NsAI6hE=
 github.com/osins/osin-storage v0.1.5/go.mod h1:8ZDuZWsxom7TOtcpf7pwX0RwzqStEgtzU2X6YzVhUCo=
 github.com/pascaldekloe/goe v0.0.0-20180627143212-57f6aae5913c/go.mod h1:lzWF7FIEvWOWxwDKqyGYQf6ZUaNfKdP144TG7ZOy1lc=

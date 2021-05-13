@@ -2,7 +2,6 @@ package route
 
 import (
 	"fmt"
-	"net/url"
 	"runtime/debug"
 
 	"github.com/gofiber/fiber/v2"
@@ -142,15 +141,6 @@ func (r *route) Authorize(ctx *fiber.Ctx) error {
 	if res == nil {
 		return fmt.Errorf("authorize handle error:%s\n", "res is null")
 	}
-
-	params := url.Values{
-		"code":  {res.Code},
-		"state": {res.State},
-	}
-
-	fmt.Printf("authorize handle complete.\n")
-
-	res.RedirectUri = fmt.Sprintf("%s?%s", res.RedirectUri, params.Encode())
 
 	if ctx.Route().Method == fiber.MethodPost &&
 		(req.ResponseType == simple_request.AUTHORIZE_RESPONSE_LOGIN ||
