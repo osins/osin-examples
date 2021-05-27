@@ -12,8 +12,10 @@ function showRegisterForm() {
         $('.login-footer').fadeOut('fast', function () {
             $('.register-footer').fadeIn('fast');
         });
-        $('.modal-title').html('Register with');
+        $('.modal-title').html('登录');
     });
+
+    $('#response_type').val('register');
     $('.error').removeClass('alert alert-danger').html('');
 
 }
@@ -24,7 +26,7 @@ function showLoginForm() {
             $('.login-footer').fadeIn('fast');
         });
 
-        $('.modal-title').html('Login with');
+        $('.modal-title').html('登录');
     });
     $('.error').removeClass('alert alert-danger').html('');
 }
@@ -74,8 +76,8 @@ function registerSubmit() {
     var data = {
         username: $('#reg_username').val(),
         password: $('#reg_password').val(),
-        password: $('#email').val(),
-        password: $('#mobile').val(),
+        email: $('#email').val(),
+        mobile: $('#mobile').val(),
         client_id: $('#client_id').val(),
         client_secret: $('#client_secret').val(),
         response_type: $('#response_type').val(),

@@ -1,13 +1,13 @@
 <div class="box">
     <div class="content registerBox" style="display:none;">
         <div class="form">
-            <form id="register-form" method="" html="{:multipart=>true}" data-remote="true" action="" accept-charset="UTF-8">
-            <input id="reg_username" class="form-control" type="text" placeholder="用户(昵称/邮箱/手机号)" name="reg_username">
-            <input id="reg_password" class="form-control" type="password" placeholder="密码" name="reg_password">
-            <input id="password_confirmation" class="form-control" type="password" placeholder="再次输入密码" name="password_confirmation">
-            <input id="email" class="form-control" type="email" placeholder="邮箱" name="email">
-            <input id="mobile" class="form-control" type="mobile" placeholder="手机" name="mobile">
-            <input class="btn btn-default btn-register" type="button" value="注册" onclick="registerSubmit()">
+            <form id="login-form" method="POST" action="/oauth/authorize" accept-charset="UTF-8">
+                <input id="reg_username" class="form-control" type="text" placeholder="用户(昵称/邮箱/手机号)" name="reg_username">
+                <input id="reg_password" class="form-control" type="password" placeholder="密码" name="reg_password">
+                <input id="password_confirmation" class="form-control" type="password" placeholder="再次输入密码" name="password_confirmation">
+                <input id="email" class="form-control" type="email" placeholder="邮箱" name="email">
+                <input id="mobile" class="form-control" type="mobile" placeholder="手机" name="mobile">
+                <input class="btn btn-default btn-register" type="button" value="注册" onclick="registerSubmit()">
             </form>
         </div>
     </div>
