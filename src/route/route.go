@@ -9,8 +9,8 @@ import (
 	"github.com/osins/osin-simple/simple/config"
 	simple_request "github.com/osins/osin-simple/simple/request"
 	"github.com/osins/osin-simple/simple/response"
-	"github.com/osins/osin-storage/storage/pg"
-	"sso.humanrisk.cn/auth"
+	"github.com/osins/osin-storage/storage"
+	"github.com/osins/osins-examples/auth"
 )
 
 func New() Route {

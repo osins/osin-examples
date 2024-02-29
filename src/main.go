@@ -10,10 +10,10 @@ import (
 	fiber "github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
 	"github.com/gofiber/template/django"
-	"github.com/osins/osin-storage/storage/pg"
-	"sso.humanrisk.cn/auth"
-	"sso.humanrisk.cn/route"
-	"sso.humanrisk.cn/util"
+	"github.com/osins/osin-storage/storage"
+	"github.com/osins/osins-examples/auth"
+	"github.com/osins/osins-examples/route"
+	"github.com/osins/osins-examples/util"
 )
 
 var (

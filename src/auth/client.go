@@ -5,8 +5,8 @@ import (
 	"fmt"
 
 	"github.com/google/uuid"
-	"github.com/osins/osin-storage/storage/pg"
-	"github.com/osins/osin-storage/storage/pg/model"
+	"github.com/osins/osin-storage/storage"
+	"github.com/osins/osin-storage/storage/model"
 )
 
 func NewClient() Client {

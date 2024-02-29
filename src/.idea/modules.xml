@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/sso.humanrisk.cn.iml" filepath="$PROJECT_DIR$/.idea/sso.humanrisk.cn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/github.com/osins/osins-examples.iml" filepath="$PROJECT_DIR$/.idea/github.com/osins/osins-examples.iml" />
     </modules>
   </component>
 </project>
